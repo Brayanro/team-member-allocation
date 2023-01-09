@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -6,7 +6,6 @@ import Nav from './components/Nav'
 import { DataProvider } from './context/DataContext'
 import Employees from './pages/Employees'
 import GroupedTeamMembers from './pages/GroupedTeamMembers'
-import NotFound from './pages/NotFound'
 
 
 function App() {
@@ -27,7 +26,7 @@ function App() {
           />
           <Route
             path='*'
-            element={<NotFound />}
+            element={<Navigate to="/" replace />}
           />
         </Routes>
         <Footer />
