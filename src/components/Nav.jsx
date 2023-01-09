@@ -5,7 +5,7 @@ const Nav = () => {
     <nav className="navbar navbar-expand-lg bg-secondary">
       <div className="container-fluid">
         <span className="navbar-brand">
-          <Link className="nav-link text-white" to="/">Team Member Allocation</Link>
+          <Link className="nav-link text-white" to="/team-member-allocation">Team Member Allocation</Link>
         </span>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -13,7 +13,7 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/">Home</Link>
+              <Link className="nav-link text-white" to="/team-member-allocation">Home</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link text-white" to="/GroupedTeamMembers">Teams</Link>

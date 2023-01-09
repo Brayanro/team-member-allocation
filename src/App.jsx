@@ -16,7 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route
-            path='/'
+            path='/team-member-allocation'
             element={<Employees />}
           >
           </Route>
@@ -26,7 +26,7 @@ function App() {
           />
           <Route
             path='*'
-            element={<Navigate to="/" replace />}
+            element={<Navigate to="/team-member-allocation" replace />}
           />
         </Routes>
         <Footer />
